@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiIssueRepro.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiIssueRepro"
+    Shell.FlyoutBehavior="Disabled">
+
+    <Shell.Resources>
+        <Style x:Key="BrowseTab1" TargetType="Tab">
+            <Style.Triggers>
+                <Trigger TargetType="Tab" Property="IsChecked" Value="False">
+                    <Setter Property="Icon" Value="radio_off.png" />
+                </Trigger>
+                <Trigger TargetType="Tab" Property="IsChecked" Value="True">
+                    <Setter Property="Icon" Value="radio_on.png" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="BrowseTab2" TargetType="Tab">
+            <Style.Triggers>
+                <Trigger TargetType="Tab" Property="IsChecked" Value="False">
+                    <Setter Property="Icon" Value="radio_off.png" />
+                </Trigger>
+                <Trigger TargetType="Tab" Property="IsChecked" Value="True">
+                    <Setter Property="Icon" Value="radio_on.png" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="BrowseTab3" TargetType="Tab">
+            <Style.Triggers>
+                <Trigger TargetType="Tab" Property="IsChecked" Value="False">
+                    <Setter Property="Icon" Value="radio_off.png" />
+                </Trigger>
+                <Trigger TargetType="Tab" Property="IsChecked" Value="True">
+                    <Setter Property="Icon" Value="radio_on.png" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Shell.Resources>
+
+
+
+    <TabBar>
+        <Tab
+            Title="Quotations"
+            Icon="line_chart.png"
+            Style="{StaticResource BrowseTab1}">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage1" />
+        </Tab>
+        <Tab
+            Title="Logout"
+            Icon="briefcase.png"
+            Style="{StaticResource BrowseTab2}">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage2" />
+        </Tab>
+        <Tab
+            Title="Timer"
+            Icon="wallet.png"
+            Style="{StaticResource BrowseTab3}">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage3" />
+        </Tab>
+    </TabBar>
+
+</Shell>

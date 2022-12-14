@@ -1,0 +1,10 @@
+.vs/
+*.dll
+*.user
+*.pdb
+*.csproj.user
+*.dbmdl
+*.jfm
+obj/
+bin/
+traces/
