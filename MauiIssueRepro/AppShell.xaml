@@ -44,19 +44,19 @@
     <TabBar>
         <Tab
             Title="Quotations"
-            Icon="line_chart.png"
+            Icon="radio_off.png"
             Style="{StaticResource BrowseTab1}">
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage1" />
         </Tab>
         <Tab
             Title="Logout"
-            Icon="briefcase.png"
+            Icon="radio_off.png"
             Style="{StaticResource BrowseTab2}">
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage2" />
         </Tab>
         <Tab
             Title="Timer"
-            Icon="wallet.png"
+            Icon="radio_off.png"
             Style="{StaticResource BrowseTab3}">
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage3" />
         </Tab>
